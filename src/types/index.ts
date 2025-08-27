@@ -45,3 +45,16 @@ export interface User {
   role: 'admin' | 'user'
   createdAt: Date
 }
+
+export interface CarSpecs {
+  engine: string
+  power: string
+  acceleration: string
+  topSpeed: string
+}
+
+export interface Car {
+  name: string
+  image: string
+  specs: CarSpecs
+}

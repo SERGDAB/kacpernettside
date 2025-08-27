@@ -1,4 +1,4 @@
-import { NavItem, Service } from '../types'
+import type { NavItem } from '../types'
 
 // Navigation items
 export const NAV_ITEMS: NavItem[] = [
@@ -45,7 +45,7 @@ export const COMPANY_INFO = {
 
 // API configuration (for backend integration)
 export const API_CONFIG = {
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000',
+  baseURL: (import.meta as any).env?.VITE_API_URL || 'http://localhost:5000',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'

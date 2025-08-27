@@ -1,6 +1,7 @@
-import axios, { AxiosInstance, AxiosResponse } from 'axios'
+import axios from 'axios'
+import type { AxiosInstance, AxiosResponse } from 'axios'
+import type { ApiResponse } from '../types'
 import { API_CONFIG } from './constants'
-import { ApiResponse } from '../types'
 
 // Create axios instance with default configuration
 const apiClient: AxiosInstance = axios.create({
