@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Ferrari theme */
+@layer base {
+  html {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+  }
+}
+
+/* Custom animations */
+@layer components {
+  .ferrari-gradient {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+  }
+}
