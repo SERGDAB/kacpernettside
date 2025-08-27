@@ -5,9 +5,20 @@ interface CarCardProps {
   car: Car
 }
 
-const FALLBACK_IMG = 'https://images.unsplash.com/photo-1606220838315-056192d5e927?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+const GLOBAL_FALLBACK_IMG = 'https://images.unsplash.com/photo-1606220838315-056192d5e927?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
 
 const CarCard: React.FC<CarCardProps> = ({ car }) => {
+  const handleError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.currentTarget
+    if (car.fallbackImage && target.src !== car.fallbackImage) {
+      target.src = car.fallbackImage
+      return
+    }
+    if (target.src !== GLOBAL_FALLBACK_IMG) {
+      target.src = GLOBAL_FALLBACK_IMG
+    }
+  }
+
   return (
     <div className="grid grid-cols-2 gap-4">
       <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-800">
@@ -17,12 +28,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
           loading="lazy"
-          onError={(e) => {
-            const target = e.currentTarget
-            if (target.src !== FALLBACK_IMG) {
-              target.src = FALLBACK_IMG
-            }
-          }}
+          onError={handleError}
         />
       </div>
       <div className="bg-gray-900 p-4 rounded-lg border border-gray-800">

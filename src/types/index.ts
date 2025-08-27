@@ -57,4 +57,5 @@ export interface Car {
   name: string
   image: string
   specs: CarSpecs
+  fallbackImage?: string
 }

@@ -4,6 +4,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari SF90 Stradale',
     image: 'https://images.unsplash.com/photo-1606220838315-056192d5e927?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '4.0L Twin-Turbo V8 + 3 Electric Motors',
       power: '986 hp (combined)',
@@ -14,6 +15,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari 812 Superfast',
     image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '6.5L Naturally Aspirated V12',
       power: '789 hp @ 8,500 rpm',
@@ -24,6 +26,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari F8 Tributo',
     image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '3.9L Twin-Turbo V8',
       power: '710 hp @ 8,000 rpm',
@@ -34,6 +37,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari 296 GTB',
     image: 'https://images.unsplash.com/photo-1517167685281-3a6fdbf34e30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '3.0L Twin-Turbo V6 + Electric Motor',
       power: '830 hp (combined)',
@@ -44,6 +48,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari Roma',
     image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '3.9L Twin-Turbo V8',
       power: '612 hp @ 7,500 rpm',
@@ -54,6 +59,7 @@ export const FERRARI_CARS: Car[] = [
   {
     name: 'Ferrari Portofino M',
     image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    fallbackImage: 'https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     specs: {
       engine: '3.9L Twin-Turbo V8',
       power: '612 hp @ 7,500 rpm',
