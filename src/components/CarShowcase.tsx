@@ -1,25 +1,17 @@
-import CarCard from './CarCard'
+import CarCarousel from './CarCarousel'
 import { FERRARI_CARS } from '../data/cars'
 
 const CarShowcase = () => {
   const cars = FERRARI_CARS
 
   return (
-    <div className="min-h-screen bg-black p-8">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-6xl font-bold text-white mb-12 text-center">FERRARI COLLECTION</h1>
-        <div className="grid grid-cols-2 gap-16">
-          <div className="space-y-8">
-            {cars.slice(0, 3).map((car, index) => (
-              <CarCard key={index} car={car} />
-            ))}
-          </div>
-          <div className="space-y-8">
-            {cars.slice(3, 6).map((car, index) => (
-              <CarCard key={index + 3} car={car} />
-            ))}
-          </div>
+    <div className="min-h-screen bg-black flex items-center">
+      <div className="w-full max-w-7xl mx-auto px-6">
+        <div className="mb-6 text-center">
+          <h1 className="text-7xl md:text-8xl font-extrabold tracking-widest text-white text-center text-glow">FERRARI COLLECTION</h1>
+          <p className="mt-3 text-gray-400 text-lg md:text-2xl tracking-widest uppercase">Beyond the concrete</p>
         </div>
+        <CarCarousel cars={cars} />
       </div>
     </div>
   )
